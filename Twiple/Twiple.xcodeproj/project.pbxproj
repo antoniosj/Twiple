@@ -19,6 +19,7 @@
 		F494A05A2464AB0B0045A420 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A0592464AB0B0045A420 /* ExploreController.swift */; };
 		F494A05E2464AB2F0045A420 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05D2464AB2F0045A420 /* ConversationsController.swift */; };
 		F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05F2464ABA60045A420 /* NotificationsController.swift */; };
+		F494A0622464D8180045A420 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A0612464D8180045A420 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F494A0592464AB0B0045A420 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		F494A05D2464AB2F0045A420 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		F494A05F2464ABA60045A420 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		F494A0612464D8180045A420 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		F494A0532464A80D0045A420 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F494A0612464D8180045A420 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				F494A05E2464AB2F0045A420 /* ConversationsController.swift in Sources */,
 				F494A01D2464A7180045A420 /* AppDelegate.swift in Sources */,
 				F494A05A2464AB0B0045A420 /* ExploreController.swift in Sources */,
+				F494A0622464D8180045A420 /* Extensions.swift in Sources */,
 				F494A01F2464A7180045A420 /* SceneDelegate.swift in Sources */,
 				F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */,
 				F494A0552464A8A90045A420 /* MainTabController.swift in Sources */,
