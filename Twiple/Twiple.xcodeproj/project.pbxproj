@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4815405246666650074D1E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4815404246666650074D1E0 /* LoginController.swift */; };
+		F4815407246667200074D1E0 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4815406246667200074D1E0 /* RegistrationController.swift */; };
 		F494A01D2464A7180045A420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A01C2464A7180045A420 /* AppDelegate.swift */; };
 		F494A01F2464A7180045A420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A01E2464A7180045A420 /* SceneDelegate.swift */; };
 		F494A0242464A7180045A420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F494A0222464A7180045A420 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4815404246666650074D1E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F4815406246667200074D1E0 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		F494A0192464A7180045A420 /* Twiple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F494A01C2464A7180045A420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F494A01E2464A7180045A420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48154032466664F0074D1E0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F4815404246666650074D1E0 /* LoginController.swift */,
+				F4815406246667200074D1E0 /* RegistrationController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		F494A0102464A7180045A420 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +166,7 @@
 		F494A04F2464A7BF0045A420 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F48154032466664F0074D1E0 /* Auth */,
 				F494A0542464A8A90045A420 /* MainTabController.swift */,
 				F494A0572464AABB0045A420 /* FeedController.swift */,
 				F494A0592464AB0B0045A420 /* ExploreController.swift */,
@@ -326,9 +340,11 @@
 				F494A01D2464A7180045A420 /* AppDelegate.swift in Sources */,
 				F494A05A2464AB0B0045A420 /* ExploreController.swift in Sources */,
 				F494A0622464D8180045A420 /* Extensions.swift in Sources */,
+				F4815405246666650074D1E0 /* LoginController.swift in Sources */,
 				F494A01F2464A7180045A420 /* SceneDelegate.swift in Sources */,
 				F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */,
 				F494A0552464A8A90045A420 /* MainTabController.swift in Sources */,
+				F4815407246667200074D1E0 /* RegistrationController.swift in Sources */,
 				F494A0582464AABB0045A420 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
