@@ -20,39 +20,55 @@ class LoginController: UIViewController {
     }()
     
     private lazy var emailContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemBlue
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        //add email icon to the left of text
-        let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "mail")
-        view.addSubview(iv)
-        
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-        
-        iv.setDimensions(width: 24, height: 24)
-        
+        let emailIcon = #imageLiteral(resourceName: "ic_mail_outline_white_2x-1")
+        let view = Utilities().inputContainerView(withImage: emailIcon, textField: emailTextField)
         return view
     }()
     
     private lazy var passwordContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemRed
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        //add email icon to the left of text
-        let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "ic_lock_outline_white_2x")
-        view.addSubview(iv)
-            
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-            
-        iv.setDimensions(width: 24, height: 24)
-            
-        
+        let passwordIcon = #imageLiteral(resourceName: "ic_lock_outline_white_2x")
+        let view = Utilities().inputContainerView(withImage: passwordIcon, textField: passwordTextField)
         return view
     }()
+    
+    private let emailTextField: UITextField = {
+        let tf = Utilities().textField(withPlaceholder: "Email")
+        return tf
+    }()
+    
+    private let passwordTextField: UITextField = {
+        let tf = Utilities().textField(withPlaceholder: "Password")
+        tf.isSecureTextEntry = true
+        return tf
+    }()
+    
+    private let loginButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Log In", for: .normal)
+        button.backgroundColor = .white
+        button.setTitleColor(.indigo, for: .normal)
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        return button
+    }()
+    
+    private let dontHaveAccountButton: UIButton = {
+        let button = Utilities().attributedButton("Don't have an account? ", "Sign Up")
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
+        return button
+    }()
+    
+    // MARK: - Selectors
+    
+    @objc func handleLogin() {
+        print("login here")
+    }
+    
+    @objc func handleShowSignUp() {
+        let controller = RegistrationController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
     
     // MARK: - Lifecycle
     
@@ -64,7 +80,7 @@ class LoginController: UIViewController {
     // MARK: - Helpers
     
     func configureUI() {
-        view.backgroundColor = .customPurple
+        view.backgroundColor = .indigo
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         //img view centralizada no topo + meio
@@ -73,11 +89,15 @@ class LoginController: UIViewController {
         logoImageView.setDimensions(width: 150, height: 150)
         
         //stackview
-        let stackView = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView])
+        let stackView = UIStackView(arrangedSubviews: [emailContainerView,      passwordContainerView, loginButton])
         stackView.axis = .vertical
-        stackView.spacing = 8
+        stackView.spacing = 20
+        stackView.distribution = .fillEqually
         
         view.addSubview(stackView)
-        stackView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
+        stackView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
+        
+        view.addSubview(dontHaveAccountButton)
+        dontHaveAccountButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 40, paddingRight: 40)
     }
 }
