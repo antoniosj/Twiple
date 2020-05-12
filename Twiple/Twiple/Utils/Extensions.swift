@@ -104,3 +104,4 @@ extension UIColor {
     //custom Purple color
     static let indigo = UIColor.rgb(red: 75, green: 0, blue: 130)
 }
+
