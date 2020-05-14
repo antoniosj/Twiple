@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationController: UIViewController {
     
     // MARK: - Properties
     
     private let imagePicker = UIImagePickerController()
+    private var profileImage: UIImage?
     
     private let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
@@ -64,7 +66,6 @@ class RegistrationController: UIViewController {
     
     private let usernameTextField: UITextField = {
         let tf = Utilities().textField(withPlaceholder: "User Name")
-        tf.isSecureTextEntry = true
         return tf
     }()
     
@@ -75,8 +76,9 @@ class RegistrationController: UIViewController {
     
     private let registrationButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Log In", for: .normal)
+        button.setTitle("Sign Up", for: .normal)
         button.backgroundColor = .white
+        button.layer.cornerRadius = 5
         button.setTitleColor(.indigo, for: .normal)
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -90,7 +92,25 @@ class RegistrationController: UIViewController {
     }
     
     @objc func handleRegistration() {
-        print("registration here")
+        
+        guard let profileImage = profileImage else {
+            print("DEBUG: Please select a profile image...")
+            return
+        }
+        
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let username = usernameTextField.text else { return }
+        guard let fullname = fullameTextField.text else { return }
+        
+        let credentials = AuthCredentials(email: email, password: password, fullname: fullname, username: username, profileImage: profileImage)
+        
+        AuthService.shared.registerUser(credentials: credentials) { (error, ref ) in
+            print("DEBUG: Sign up successfully")
+        }
+        
+        
+        
     }
     
     // MARK: - Lifecycle
@@ -140,6 +160,8 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let profileImage = info[.editedImage] as? UIImage else { return }
+        
+        self.profileImage = profileImage
         
         //Transform squared image into rounded image
         plusPhotoButton.layer.cornerRadius = 128 / 2

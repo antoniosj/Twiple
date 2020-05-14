@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269EDA8D1394883BBF9BC635 /* Pods_TwipleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF821C9B884302CD5EF12B39 /* Pods_TwipleTests.framework */; };
+		53676D759DF5E9C0B059B8EC /* Pods_Twiple_TwipleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12900DB9E1D997A69F39508C /* Pods_Twiple_TwipleUITests.framework */; };
+		8EE6433B6E5DD6D2D7B62179 /* Pods_Twiple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5896766047F4950E2A5F5AB /* Pods_Twiple.framework */; };
 		F4815405246666650074D1E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4815404246666650074D1E0 /* LoginController.swift */; };
 		F4815407246667200074D1E0 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4815406246667200074D1E0 /* RegistrationController.swift */; };
 		F4815409246902580074D1E0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4815408246902580074D1E0 /* Utilities.swift */; };
@@ -23,6 +26,9 @@
 		F494A05E2464AB2F0045A420 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05D2464AB2F0045A420 /* ConversationsController.swift */; };
 		F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05F2464ABA60045A420 /* NotificationsController.swift */; };
 		F494A0622464D8180045A420 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A0612464D8180045A420 /* Extensions.swift */; };
+		F4DAD5A3246D105D0059DF0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAD5A2246D105D0059DF0D /* Constants.swift */; };
+		F4DAD5A5246D14990059DF0D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAD5A4246D14990059DF0D /* AuthService.swift */; };
+		F4DB1A9C246B6BF900A4BF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4DB1A9B246B6BF800A4BF5B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12900DB9E1D997A69F39508C /* Pods_Twiple_TwipleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twiple_TwipleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E22A7E14C4C1DA06FDFF47 /* Pods-TwipleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwipleTests.debug.xcconfig"; path = "Target Support Files/Pods-TwipleTests/Pods-TwipleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE60361861DE55D7420EBE7 /* Pods-Twiple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiple.release.xcconfig"; path = "Target Support Files/Pods-Twiple/Pods-Twiple.release.xcconfig"; sourceTree = "<group>"; };
+		6EC9BB2002A029323B9DAB3B /* Pods-TwipleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwipleTests.release.xcconfig"; path = "Target Support Files/Pods-TwipleTests/Pods-TwipleTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CEAFD7C41680D4B772980B8 /* Pods-Twiple-TwipleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiple-TwipleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Twiple-TwipleUITests/Pods-Twiple-TwipleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20BD02286BE8A26883A9F90 /* Pods-Twiple-TwipleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiple-TwipleUITests.release.xcconfig"; path = "Target Support Files/Pods-Twiple-TwipleUITests/Pods-Twiple-TwipleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5896766047F4950E2A5F5AB /* Pods_Twiple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twiple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF821C9B884302CD5EF12B39 /* Pods_TwipleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwipleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E573A7EF63A6697C66EFF381 /* Pods-Twiple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiple.debug.xcconfig"; path = "Target Support Files/Pods-Twiple/Pods-Twiple.debug.xcconfig"; sourceTree = "<group>"; };
 		F4815404246666650074D1E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F4815406246667200074D1E0 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		F4815408246902580074D1E0 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -65,6 +80,9 @@
 		F494A05D2464AB2F0045A420 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		F494A05F2464ABA60045A420 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		F494A0612464D8180045A420 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4DAD5A2246D105D0059DF0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4DAD5A4246D14990059DF0D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F4DB1A9B246B6BF800A4BF5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE6433B6E5DD6D2D7B62179 /* Pods_Twiple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269EDA8D1394883BBF9BC635 /* Pods_TwipleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53676D759DF5E9C0B059B8EC /* Pods_Twiple_TwipleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6E766664C4E0AAD02D0942 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E573A7EF63A6697C66EFF381 /* Pods-Twiple.debug.xcconfig */,
+				6BE60361861DE55D7420EBE7 /* Pods-Twiple.release.xcconfig */,
+				7CEAFD7C41680D4B772980B8 /* Pods-Twiple-TwipleUITests.debug.xcconfig */,
+				A20BD02286BE8A26883A9F90 /* Pods-Twiple-TwipleUITests.release.xcconfig */,
+				64E22A7E14C4C1DA06FDFF47 /* Pods-TwipleTests.debug.xcconfig */,
+				6EC9BB2002A029323B9DAB3B /* Pods-TwipleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEA030487DF59744CBA4149B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5896766047F4950E2A5F5AB /* Pods_Twiple.framework */,
+				12900DB9E1D997A69F39508C /* Pods_Twiple_TwipleUITests.framework */,
+				CF821C9B884302CD5EF12B39 /* Pods_TwipleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F48154032466664F0074D1E0 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +152,8 @@
 				F494A0322464A71A0045A420 /* TwipleTests */,
 				F494A03D2464A71A0045A420 /* TwipleUITests */,
 				F494A01A2464A7180045A420 /* Products */,
+				AF6E766664C4E0AAD02D0942 /* Pods */,
+				BEA030487DF59744CBA4149B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +181,7 @@
 				F494A0222464A7180045A420 /* Main.storyboard */,
 				F494A0252464A7190045A420 /* Assets.xcassets */,
 				F494A0272464A7190045A420 /* LaunchScreen.storyboard */,
+				F4DB1A9B246B6BF800A4BF5B /* GoogleService-Info.plist */,
 				F494A02A2464A7190045A420 /* Info.plist */,
 			);
 			path = Twiple;
@@ -161,6 +208,7 @@
 		F494A04C2464A7B40045A420 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F4DAD5A4246D14990059DF0D /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -204,6 +252,7 @@
 			children = (
 				F494A0612464D8180045A420 /* Extensions.swift */,
 				F4815408246902580074D1E0 /* Utilities.swift */,
+				F4DAD5A2246D105D0059DF0D /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -215,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F494A0432464A71A0045A420 /* Build configuration list for PBXNativeTarget "Twiple" */;
 			buildPhases = (
+				E3820AE154962B0E4F6EA817 /* [CP] Check Pods Manifest.lock */,
 				F494A0152464A7180045A420 /* Sources */,
 				F494A0162464A7180045A420 /* Frameworks */,
 				F494A0172464A7180045A420 /* Resources */,
+				BA5EE6708E030359BDCFE48D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F494A0462464A71A0045A420 /* Build configuration list for PBXNativeTarget "TwipleTests" */;
 			buildPhases = (
+				DA5E5D4BB8AD6F7D889B8EBA /* [CP] Check Pods Manifest.lock */,
 				F494A02B2464A71A0045A420 /* Sources */,
 				F494A02C2464A71A0045A420 /* Frameworks */,
 				F494A02D2464A71A0045A420 /* Resources */,
@@ -250,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F494A0492464A71A0045A420 /* Build configuration list for PBXNativeTarget "TwipleUITests" */;
 			buildPhases = (
+				D670BA658EADEDC5F492A4EE /* [CP] Check Pods Manifest.lock */,
 				F494A0362464A71A0045A420 /* Sources */,
 				F494A0372464A71A0045A420 /* Frameworks */,
 				F494A0382464A71A0045A420 /* Resources */,
+				73DDDC373F909331E59A2012 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F494A0292464A7190045A420 /* LaunchScreen.storyboard in Resources */,
+				F4DB1A9C246B6BF900A4BF5B /* GoogleService-Info.plist in Resources */,
 				F494A0262464A7190045A420 /* Assets.xcassets in Resources */,
 				F494A0242464A7180045A420 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +389,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73DDDC373F909331E59A2012 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twiple-TwipleUITests/Pods-Twiple-TwipleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twiple-TwipleUITests/Pods-Twiple-TwipleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twiple-TwipleUITests/Pods-Twiple-TwipleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA5EE6708E030359BDCFE48D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twiple/Pods-Twiple-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twiple/Pods-Twiple-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twiple/Pods-Twiple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D670BA658EADEDC5F492A4EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twiple-TwipleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5E5D4BB8AD6F7D889B8EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwipleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3820AE154962B0E4F6EA817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twiple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F494A0152464A7180045A420 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -345,11 +503,13 @@
 				F494A05A2464AB0B0045A420 /* ExploreController.swift in Sources */,
 				F494A0622464D8180045A420 /* Extensions.swift in Sources */,
 				F4815405246666650074D1E0 /* LoginController.swift in Sources */,
+				F4DAD5A5246D14990059DF0D /* AuthService.swift in Sources */,
 				F494A01F2464A7180045A420 /* SceneDelegate.swift in Sources */,
 				F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */,
 				F494A0552464A8A90045A420 /* MainTabController.swift in Sources */,
 				F4815407246667200074D1E0 /* RegistrationController.swift in Sources */,
 				F494A0582464AABB0045A420 /* FeedController.swift in Sources */,
+				F4DAD5A3246D105D0059DF0D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +680,7 @@
 		};
 		F494A0442464A71A0045A420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E573A7EF63A6697C66EFF381 /* Pods-Twiple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +698,7 @@
 		};
 		F494A0452464A71A0045A420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE60361861DE55D7420EBE7 /* Pods-Twiple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +716,7 @@
 		};
 		F494A0472464A71A0045A420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E22A7E14C4C1DA06FDFF47 /* Pods-TwipleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +738,7 @@
 		};
 		F494A0482464A71A0045A420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC9BB2002A029323B9DAB3B /* Pods-TwipleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +760,7 @@
 		};
 		F494A04A2464A71A0045A420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEAFD7C41680D4B772980B8 /* Pods-Twiple-TwipleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,6 +780,7 @@
 		};
 		F494A04B2464A71A0045A420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20BD02286BE8A26883A9F90 /* Pods-Twiple-TwipleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
