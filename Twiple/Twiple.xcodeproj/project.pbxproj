@@ -26,6 +26,7 @@
 		F494A05E2464AB2F0045A420 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05D2464AB2F0045A420 /* ConversationsController.swift */; };
 		F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A05F2464ABA60045A420 /* NotificationsController.swift */; };
 		F494A0622464D8180045A420 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494A0612464D8180045A420 /* Extensions.swift */; };
+		F49D566724762E78004311CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D566624762E78004311CD /* User.swift */; };
 		F4DAD5A3246D105D0059DF0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAD5A2246D105D0059DF0D /* Constants.swift */; };
 		F4DAD5A5246D14990059DF0D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAD5A4246D14990059DF0D /* AuthService.swift */; };
 		F4DAD5A7246E50F40059DF0D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAD5A6246E50F40059DF0D /* UserService.swift */; };
@@ -81,6 +82,7 @@
 		F494A05D2464AB2F0045A420 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		F494A05F2464ABA60045A420 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		F494A0612464D8180045A420 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F49D566624762E78004311CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F4DAD5A2246D105D0059DF0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F4DAD5A4246D14990059DF0D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F4DAD5A6246E50F40059DF0D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		F494A0522464A7CA0045A420 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F49D566624762E78004311CD /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				F494A0622464D8180045A420 /* Extensions.swift in Sources */,
 				F4815405246666650074D1E0 /* LoginController.swift in Sources */,
 				F4DAD5A5246D14990059DF0D /* AuthService.swift in Sources */,
+				F49D566724762E78004311CD /* User.swift in Sources */,
 				F494A01F2464A7180045A420 /* SceneDelegate.swift in Sources */,
 				F494A0602464ABA60045A420 /* NotificationsController.swift in Sources */,
 				F494A0552464A8A90045A420 /* MainTabController.swift in Sources */,

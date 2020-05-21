@@ -105,10 +105,17 @@ class RegistrationController: UIViewController {
         
         let credentials = AuthCredentials(email: email, password: password, fullname: fullname, username: username, profileImage: profileImage)
         
+        print("DEBUG: Credentials ok: \(credentials)")
+        
         AuthService.shared.registerUser(credentials: credentials) { (error, ref ) in
             guard let window = UIApplication.shared.windows.first(where: {$0.isKeyWindow}) else { return }
             
+            
+            print("DEBUG: window ok")
+            
             guard let tab = window.rootViewController as? MainTabController else { return }
+            
+            print("DEBUG: tab ok")
             
             tab.authenticateUserAndConfigureUI()
             

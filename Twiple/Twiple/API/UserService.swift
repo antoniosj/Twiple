@@ -13,14 +13,21 @@ struct UserService {
     static let shared = UserService()
     
     func fetchUser() {
+        
+        print("DEBUG: FetchUser")
+        
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         REF_USERS.child(uid).observeSingleEvent(of: .value) { snapshot in
             guard let dictionary = snapshot.value as? [String: AnyObject] else { return } // snapshot = dados (como json +-) // key = hash e value = dados
+            print("DEBUG: Dcitionary: \(dictionary)")
             
             guard let username = dictionary["username"] as? String else { return }
             
-            print("USERNAME: \(username)")
+            let user = User(uid: uid, dicitionary: dictionary)
+            print("DEBUG USERNAME1: \(username)")
+
+            print("DEBUG USERNAME: \(user.username)")
         }
     }
 }
