@@ -10,6 +10,7 @@ target 'Twiple' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'TwipleTests' do
     inherit! :search_paths

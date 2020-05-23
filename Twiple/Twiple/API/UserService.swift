@@ -12,7 +12,7 @@ import Firebase
 struct UserService {
     static let shared = UserService()
     
-    func fetchUser() {
+    func fetchUser(completion: @escaping(User) -> Void) {
         
         print("DEBUG: FetchUser")
         

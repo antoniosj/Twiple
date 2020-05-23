@@ -12,6 +12,15 @@ import Firebase
 class MainTabController: UITabBarController {
 
     // MARK: - Properties
+    var user: User? {
+        didSet {
+            print("DEBUG: Did set user in main tab.")
+            guard let nav = viewControllers?[0] as? UINavigationController else { return }
+            guard let feed = nav.viewControllers.first as? FeedController else { return }
+            
+            feed.user = user
+        }
+    }
     
     // this btn will appear in every single controller inside this tabcontrl
     let actionButton: UIButton = {
@@ -35,7 +44,9 @@ class MainTabController: UITabBarController {
     
     // MARK: - API
     func fetchUser() {
-        UserService.shared.fetchUser()
+        UserService.shared.fetchUser { user in
+            self.user = user
+        }
     }
     
     func authenticateUserAndConfigureUI() {
