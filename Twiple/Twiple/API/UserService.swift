@@ -28,6 +28,7 @@ struct UserService {
             print("DEBUG USERNAME1: \(username)")
 
             print("DEBUG USERNAME: \(user.username)")
+            completion(user)
         }
     }
 }
